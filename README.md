@@ -1,7 +1,7 @@
 # WEBSITE Luyện thi TOEIC - MÃ NGUỒN MỞ
 # I. Tác giả
-###### - Đây là một đề tài môn học mã nguồn mở tại trường ĐH Thông Tin Liên Lạc
-###### - Tác giả gồm 2 thành viên:
+###### - Đây là một đề tài tại trường ĐH Thông Tin Liên Lạc
+###### - Tác giả gồm 4 thành viên:
 ### 1. Trần Minh Ân
 ### 2. Cao Trung Thành 
 ### 3. Trần Quốc Toản
