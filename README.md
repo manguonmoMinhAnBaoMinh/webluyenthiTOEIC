@@ -2,7 +2,10 @@
 # I. Tác giả
 ###### - Đây là một đề tài môn học mã nguồn mở tại trường ĐH Thông Tin Liên Lạc
 ###### - Tác giả gồm 2 thành viên:
-### 1. Trần Minh Ân DHCN3B địa chỉ FB: [Tran Minh An](https://www.facebook.com/programerrrr)
+### 1. Trần Minh Ân
+### 2. Cao Trung Thành 
+### 3. Trần Quốc Toản
+### 4. Nhữ Gia Hoàng
 veedramon.ulforce)
 ###### - Chi tiết phát triển:
 
