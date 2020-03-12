@@ -1,4 +1,4 @@
-# WEBSITE ĐỌC SÁCH - MÃ NGUỒN MỞ
+# WEBSITE Luyện thi TOEIC - MÃ NGUỒN MỞ
 # I. Tác giả
 ###### - Đây là một đề tài môn học mã nguồn mở tại trường ĐH Thông Tin Liên Lạc
 ###### - Tác giả gồm 2 thành viên:
