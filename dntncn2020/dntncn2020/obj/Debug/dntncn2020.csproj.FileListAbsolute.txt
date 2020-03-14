@@ -69,3 +69,8 @@ C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntn
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.dll
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.pdb
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.csprojAssemblyReference.cache
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\Model.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\EntityFramework.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\Model.pdb
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\Model.dll.config
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\EntityFramework.xml

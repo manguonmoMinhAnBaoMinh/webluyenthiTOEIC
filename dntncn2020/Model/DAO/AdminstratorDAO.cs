@@ -22,6 +22,11 @@ namespace Model.DAO
             db.SaveChanges();
             return adminstrator.idAd;
         }
+        //Get Info
+        public Adminstrator GetAdminstrator(string taikhoan)
+        {
+            return db.Adminstrators.SingleOrDefault(x => x.tKhoan == taikhoan);
+        }
 
         //Login 
         public bool Login(string taikhoan, string matkhau)

@@ -1,0 +1,11 @@
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\Model.dll.config
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\Model.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\Model.pdb
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\EntityFramework.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\EntityFramework.xml
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\obj\Debug\Model.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\Model\obj\Debug\Model.pdb

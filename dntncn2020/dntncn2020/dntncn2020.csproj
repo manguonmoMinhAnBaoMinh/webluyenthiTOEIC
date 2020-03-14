@@ -88,10 +88,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Assets\bootstrap.min.css" />
-    <Content Include="Areas\Assets\Image\logo.png" />
-    <Content Include="Areas\Assets\Site.css" />
-    <Content Include="Areas\Assets\style.css" />
+    <Content Include="Assets\bootstrap.min.css" />
+    <Content Include="Assets\Image\logo.png" />
+    <Content Include="Assets\Site.css" />
+    <Content Include="Assets\style.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -116,6 +116,9 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Models\LoginModel.cs" />
+    <Compile Include="CommentSession\AdminstratorLogin.cs" />
+    <Compile Include="CommentSession\CommonConstants.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -153,6 +156,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7d193577-a76a-47a9-928b-ac84f91b7c93}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
