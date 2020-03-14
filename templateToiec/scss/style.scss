@@ -1,0 +1,210 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+    nav
+    {
+        z-index: 100;
+    }
+
+    /** Banner */
+    .banner
+    {
+        background: top no-repeat url('../img/oiFmU7c.png');
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin: 0 0 1rem 0;
+        .background-banner
+        {
+            background: rgba($color: #000000, $alpha: 0.7);
+            width: 100%;
+            height: 100%;
+        }
+        .banner-title
+        {
+            position: absolute;
+            color: #FFF;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            h1
+            {
+                font-size: 55px;
+            }
+            p
+            {
+                font-size: 20px;
+            }
+        }
+    }
+    /** Kết Thúc Banner */
+
+    /** Bài Giảng */
+    .bai-giang
+    {
+        padding-top: 3rem;
+        .tab 
+        {
+            overflow: hidden;
+            ul
+            {
+                width: 100%;
+                padding: 0;
+                li
+                {
+                    display: inline-block;
+                    padding: 13px 0;
+                    margin: 0;
+                    background: #3d3b3b;
+                    border: none;
+                    color: #FFF;
+                    border-bottom: 4px solid rgb(9, 139, 214);
+                    a
+                    {
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding: 14px;
+                        transition: 0.3s;
+                        font-size: 17px;
+                        &:hover 
+                        {
+                            background-color: #8d8a8a;
+                        }
+                    }
+                    a.active 
+                    {
+                        background-color: #4cd137;
+                    }
+                }
+            }
+        
+            
+        }
+        .tabcontent 
+        {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+            width: 100%;
+        }
+    }
+    /** Kết Thúc Bài Giảng */
+
+    /* Nhận Xét */
+    .nhanxet
+    {
+        width: 500px;
+        max-width: 500px;
+        height: 500px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        .nhanxet-form
+        {
+            width: 100%;
+            form
+            {
+                .form-group
+                {
+                    input
+                    {
+                        width: 100%;
+                        outline: none;
+                        font-size: 18px;
+                        box-shadow: none;
+                        border-bottom: 3px solid #4cd137;
+                    }
+                }
+            }
+        }
+    }
+    /* Hết Nhận Xét */
+
+    /* Thi thử */
+    .test-page
+    {
+        padding: 1rem 0.5rem;
+        .top-nav-list
+        {
+            .time-test
+            {
+                padding: 0 1rem 0 0;
+            }
+            .finish-all
+            {
+                padding: 1rem 0;
+            }
+        }
+
+        .question-list
+        {
+            .question-list-row
+            {
+                background: #cdcdcd;
+                padding: 2rem 1rem;
+                border: 3px dashed #4cd137;
+                .answer
+                {
+                    .answer-list
+                    {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+    /* Hết Thi thử */
+
+    /* Đăng ký */
+    .register
+    {
+        width: 300px;
+        height: 450px;
+        background: rgba(50, 51, 51, 0.774);
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1rem;
+        color: #FFF;
+        .register_title
+        {
+            h1
+            {
+                text-align: center;
+                text-transform: uppercase;
+                color: #4cd137;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 700;
+            }
+        }
+        .register_content
+        {
+            width: 100%;
+            form
+            {
+                .form-group
+                {
+                    input
+                    {
+                        width: 100%;
+                        outline: none;
+                        font-size: 18px;
+                        box-shadow: none;
+                        border-bottom: 3px solid #4cd137;
+                    }
+                }
+            }
+        }
+    }
+    /* Hết Đăng Ký*/
+}
