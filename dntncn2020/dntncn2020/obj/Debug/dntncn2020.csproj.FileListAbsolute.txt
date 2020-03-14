@@ -65,7 +65,7 @@ C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\System.Web
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\System.Web.Helpers.xml
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\System.Web.Mvc.xml
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.csprojAssemblyReference.cache
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.csproj.CopyComplete
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.dll
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.pdb
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\dntncn2020\dntncn2020\obj\Debug\dntncn2020.csprojAssemblyReference.cache

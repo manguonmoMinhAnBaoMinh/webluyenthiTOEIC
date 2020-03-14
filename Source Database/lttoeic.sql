@@ -58,3 +58,5 @@ go
 alter table Questions add constraint fk_Test_Questions foreign key (idTest) references Test(idTest)
 
 insert into Adminstrator values(N'Trần Minh Ân', 'admin', 'admin', '03/13/2020')
+
+--CREATE PROC
