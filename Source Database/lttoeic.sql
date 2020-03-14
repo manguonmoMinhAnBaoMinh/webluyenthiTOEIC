@@ -1,4 +1,4 @@
--- Author: minhandev-time: 03.12.2020
+﻿-- Author: minhandev-time: 03.12.2020
 
 if exists (select name from sysdatabases where name = 'qllttoeic')
 drop database qllttoeic;
@@ -45,7 +45,8 @@ create table Errors(
 go
 create table Adminstrator(
 	idAd int identity(000,1) primary key not null,
-	ten nvarchar(100),
+	ten nvarchar(225),
+	tKhoan varchar(100),
 	mKhau nvarchar(100),
 	nTao date,
 )
@@ -55,3 +56,5 @@ go
 alter table Errors add constraint fk_Test_Errors foreign key (idTest) references Test(idTest)
 go
 alter table Questions add constraint fk_Test_Questions foreign key (idTest) references Test(idTest)
+
+insert into Adminstrator values(N'Trần Minh Ân', 'admin', 'admin', '03/13/2020')
