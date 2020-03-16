@@ -69,3 +69,7 @@ C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationTo
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\obj\Debug\WebApplicationToeic.csproj.CopyComplete
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\obj\Debug\WebApplicationToeic.dll
 C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\obj\Debug\WebApplicationToeic.pdb
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\bin\EntityFramework.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\bin\EntityFramework.SqlServer.dll
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\bin\EntityFramework.xml
+C:\Users\minhandev\Desktop\webluyenthiTOEIC\WebApplicationToeic\WebApplicationToeic\bin\EntityFramework.SqlServer.xml
