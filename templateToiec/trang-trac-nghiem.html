@@ -133,3 +133,40 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
+List<TBL_CATEGORY> list = db.TBL_CATEGORY.ToList();
+
+    foreach (var item in list)
+    {
+        if(item.CAT_ID == catGet)
+        {
+            List<TBL_QUESTIONS> listVar = db.TBL_QUESTIONS.Where(model => model.Q_FK_CATID == item.CAT_FK_ADID).ToList();
+
+            Queue<TBL_QUESTIONS> queVar = new Queue<TBL_QUESTIONS>();
+
+            foreach(TBL_QUESTIONS itemVar in queVar)
+            {
+
+                queVar.Enqueue(itemVar);
+
+            }
+
+            TempData["Cauhoi"] = queVar;
+
+            TempData["Diem"] = 0;
+
+            TempData.Keep();
+
+            return RedirectToAction("Tracnghiem");
+        }
+
+        else
+        {
+
+            return RedirectToAction("Index");
+
+        }
+
+    }
+
+    return View();

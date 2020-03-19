@@ -1,4 +1,4 @@
-﻿@model WebApplicationToeic.Models.Adminstrator
+﻿
 
 @{
     Layout = null;
@@ -62,7 +62,7 @@
                 @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "form-horizontal" }))
                 {
                 <fieldset>
-                    <p class="text-danger">@ViewBag.Error</p>
+                    @*<p class="text-danger">@ViewBag.Error</p>*@
                     <div class="form-group">
                         <div class="col-md-12">
                             <div class="input-group">
