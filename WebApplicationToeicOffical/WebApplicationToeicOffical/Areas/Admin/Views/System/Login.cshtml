@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Đăng nhập | Hệ thống quản trị</title>
+    <!--      -->
+    <style>
+        body {
+            background-image: linear-gradient(#0e93c8, #0e93c8);
+        }
+
+        #box {
+            border: 1px solid rgb(200, 200, 200);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+            background: rgba(200, 200, 200, 0.1);
+            border-radius: 4px;
+            top: 100px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        h4 {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        ._team {
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            text-align: center;
+        }
+    </style>
+    <!--  -->
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-offset-4 col-md-4" id="box">
+                <!-- Hinh anh logo -->
+                <h4>
+                    <img src="~/Content/Admin/img/logo.png" alt="gpv_logo" height="50"
+                         width="70"><b>toeic.com</b>
+                </h4>
+                <h4><b>Hệ thống quản lý</b></h4>
+                <!-- end -->
+                <hr>
+                @using (Html.BeginForm("Login", "System", FormMethod.Post, new { @class = "form-horizontal" }))
+                {
+                    <fieldset>
+                        <p class="text-danger">@ViewBag.Error</p>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span> <input name="taikhoan" placeholder="Tên đăng nhập" class="form-control"
+                                                   type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span> <input name="matkhau" placeholder="Mật khẩu" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary btn-sm btn-block">Đăng nhập </button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <h3 class="_team"><b>Nhóm: </b></h3>
+
+                    <h5><b>Trần Minh Ân - Back-End</b></h5>
+
+                    <h5><b>Cao Trung Thành - Front-End</b></h5>
+
+                    <h5><b>Nhữ Gia Hoàng - Back-End </b></h5>
+
+                    <h5><b>Trần Quốc Toản - ?</b></h5>
+
+                    <h5><b>Thực tập CN &copy 2019 - 2020</b></h5>
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

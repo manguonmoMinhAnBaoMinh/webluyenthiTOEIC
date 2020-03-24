@@ -1,0 +1,34 @@
+﻿@model WebApplicationToeicOffical.Models.TBL_CATEGORY
+
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well well-sm"
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Thêm mới tên bài học</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.CAT_NAME, htmlAttributes: new { @class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CAT_NAME, new { htmlAttributes = new { @class = "form-control",  @placeholder="Thêm tên bài học..." } })
+                @Html.ValidationMessageFor(model => model.CAT_NAME, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm" class="btn btn-primary btn-sm btn-block" />
+            </div>
+        </div>
+    </div>
+}
+
+</div>

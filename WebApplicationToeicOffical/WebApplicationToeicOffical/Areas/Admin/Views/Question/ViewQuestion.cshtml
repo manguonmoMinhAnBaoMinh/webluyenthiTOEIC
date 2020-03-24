@@ -1,0 +1,43 @@
+﻿@using WebApplicationToeicOffical.Models
+@model TBL_QUESTIONS
+
+@{
+    ViewBag.Title = "ViewQuestion";
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well well-sm">
+
+    <h4 class="info_list well well-sm">Đáp án câu hỏi bài học: <b>@Model.TBL_CATEGORY.CAT_NAME</b></h4>
+
+    <table class="table table-striped custab">
+
+        <thead>
+
+            <tr>
+                <th>Mã câu hỏi</th>
+                <th>Câu hỏi</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>Đáp án</th>
+            </tr>
+
+        </thead>
+
+        <tr>
+            <td>@Model.QUESTION_ID</td>
+            <td>@Model.Q_TEXT</td>
+            <td>@Model.OPA</td>
+            <td>@Model.OPB</td>
+            <td>@Model.OPC</td>
+            <td>@Model.OPD</td>
+            <td><b>@Model.COP</b></td>
+        </tr>
+
+    </table>
+</div>
+<div>
+    <a href="/Admin/Question" class="btn btn-danger btn-xs"> Trở về</a>
+</div>

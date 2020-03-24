@@ -1,0 +1,13 @@
+﻿@model WebApplicationToeicOffical.Models.TBL_QUESTIONS
+@{
+    ViewBag.Title = "SelectIndex";
+    Layout = "~/Views/Layout/_LayoutQuiz.cshtml";
+}
+
+<div class="well well-sm">
+
+    @Html.DropDownList("Q_FK_CATID", (IEnumerable<SelectListItem>)ViewBag.List, "Lựa chọn bài học", new { @class = "form-control well well-sm sizeDrop" })
+
+</div>
+
+

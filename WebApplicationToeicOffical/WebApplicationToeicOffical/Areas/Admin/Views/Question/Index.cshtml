@@ -1,0 +1,67 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<WebApplicationToeicOffical.Models.TBL_QUESTIONS>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well well-sm">
+    <h4 class="info_list well well-sm">Danh sách câu hỏi</h4>
+
+    <table class="table table-striped custab">
+
+        <a href="/Admin/Question/AddQuestion" class="btn btn-primary btn-xs pull-right"><b>+</b> Thêm mới</a>
+
+        <thead>
+
+            <tr>
+                <th>STT</th>
+                <th>Câu hỏi</th>
+                <th class="text-center">Quản lý</th>
+            </tr>
+
+        </thead>
+
+        @{
+            int i = 0;
+
+            foreach (var item in Model)
+            {
+                i++;
+                using (Html.BeginForm("DelQuestion", "Question", new { id = item.QUESTION_ID }))
+                {
+
+                    <tr>
+
+                        <td>@i</td>
+                        <td>@item.Q_TEXT</td>
+
+                        <td class="text-center">
+
+                            <a href="/Admin/Question/ViewQuestion?id=@item.QUESTION_ID" class="btn btn-danger btn-xs"> Xem đáp án</a>
+                            |
+                            <a href="/Admin/Question/EditQuestion?id=@item.QUESTION_ID" class="btn btn-danger btn-xs"> Sửa</a>
+                            |
+                            <input type="submit" value="Xóa" class="btn btn-danger btn-xs" onclick="return confirm('Bạn có muốn xóa tài khoản ?')" />
+
+                        </td>
+
+                    </tr>
+
+                }
+
+            }
+
+        }
+
+    </table>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page}) )
+</div>
+
+
+
+
+
+

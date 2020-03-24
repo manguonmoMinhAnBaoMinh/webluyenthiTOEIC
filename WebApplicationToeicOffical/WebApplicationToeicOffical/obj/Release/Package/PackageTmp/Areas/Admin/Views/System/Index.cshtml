@@ -1,0 +1,61 @@
+﻿@using WebApplicationToeicOffical.Models;
+@model List<TBL_ADMIN>
+@{
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well">
+    <h1 class="info_list well well well-sm">Danh sách tài khoản</h1>
+
+    <table class="table table-striped custab">
+
+        <a href="/Admin/System/AddAccount" class="btn btn-primary btn-xs pull-right"><b>+</b> Thêm mới</a>
+
+        <thead>
+
+            <tr>
+                <th>STT</th>
+                <th>Mã tài khoản</th>
+                <th>Tài Khoản</th>
+                <th>Mật khẩu</th>
+                <th class="text-center">Quản lý</th>
+            </tr>
+
+        </thead>
+
+        @{
+            int i = 0;
+
+            foreach (var item in Model)
+            {
+                i++;
+                using (Html.BeginForm("DelAccount", "System", new { id = item.AD_ID }))
+                {
+
+                <tr>
+
+                    <td>@i</td>
+                    <td>@item.AD_ID</td>
+                    <td>@item.AD_NAME</td>
+                    <td>******</td>
+                    <td class="text-center">
+
+                        <a href="/Admin/System/EditAccount?id=@item.AD_ID" class="btn btn-danger btn-xs"> Sửa</a>
+                        |
+                        <input type="submit" value="Xóa" class="btn btn-danger btn-xs" onclick="return confirm('Bạn có muốn xóa tài khoản: @item.AD_NAME ?')" />
+
+                    </td>
+
+                </tr>
+
+                }
+
+             }
+
+            }
+
+    </table>
+
+</div>
+
+

@@ -1,0 +1,62 @@
+﻿@using WebApplicationToeicOffical.Models;
+@model List<TBL_KHACH>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well well-sm">
+    <h1 class="info_list well well well-sm">Danh sách thành viên</h1>
+    <table class="table table-striped custab">
+        <thead>
+
+            <tr>
+                <th>STT</th>
+                <th>Mã số</th>
+                <th>Họ và tên</th>
+                <th>Địa chỉ</th>
+                <th>Tên tài khoản</th>
+                <th>Mật khẩu</th>
+                <th class="text-center">Quản lý</th>
+            </tr>
+
+        </thead>
+        <div style="overflow:auto;">
+        @{
+            int i = 0;
+
+            foreach (var item in Model)
+            {
+                i++;
+                using (Html.BeginForm("DelUser", "User", new { id = item.S_ID }))
+                {
+
+                    <tr>
+
+                        <td>@i</td>
+                        <td>@item.S_ID</td>
+                        <td>@item.S_HOTEN</td>
+                        <td>@item.S_DIACHI</td>
+                        <td>@item.S_NAME</td>
+                        <td>******</td>
+                        <td class="text-center">
+
+                            <input type="submit" value="Xóa" class="btn btn-danger btn-xs" onclick="return confirm('Bạn có muốn xóa tài khoản: @item.S_HOTEN ?')" />
+
+                        </td>
+
+                    </tr>
+
+                }
+
+            }
+
+        }
+
+    </table>
+
+</div>
+
+
+
+

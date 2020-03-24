@@ -1,0 +1,62 @@
+﻿@using WebApplicationToeicOffical.Models;
+@model List<TBL_CATEGORY>
+@{
+    ViewBag.Title = "CategoryIndex";
+    Layout = "~/Areas/Admin/Views/Layout/_LayoutMainAdmin.cshtml";
+}
+
+<div class="well well-sm">
+
+    <h2 class="info_list well well-sm">Danh sách bài học</h2>
+
+    <table class="table table-striped custab">
+        <a href="/Admin/Question/AddCategory" class="btn btn-primary btn-xs pull-right"><b>+</b> Thêm mới</a>
+        <thead>
+
+            <tr>
+                <th>STT</th>
+                <th>Mã bài học</th>
+                <th>Tên bài học</th>
+                <th class="text-center">Quản lý</th>
+            </tr>
+
+        </thead>
+        <div style="overflow:auto;">
+            @{
+                int i = 0;
+
+                foreach (var item in Model)
+                {
+                    i++;
+                    using (Html.BeginForm("DelCategory", "Category", new { id = item.CAT_ID }))
+                    {
+
+                        <tr>
+
+                            <td>@i</td>
+                            <td>@item.CAT_ID</td>
+                            <td>@item.CAT_NAME</td>
+
+                            <td class="text-center">
+
+                                <a href="/Admin/Question/EditCategory?id=@item.CAT_ID" class="btn btn-danger btn-xs"> Sửa</a>
+
+                                <input type="submit" value="Xóa" class="btn btn-danger btn-xs" onclick="return confirm('Bạn có muốn xóa tài khoản: @item.CAT_NAME ?')" />
+
+                            </td>
+
+                        </tr>
+
+                    }
+
+                }
+
+            }
+
+    </table>
+
+</div>
+
+
+
+

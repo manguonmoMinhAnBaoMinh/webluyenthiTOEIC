@@ -1,0 +1,70 @@
+﻿@model WebApplicationToeicOffical.Models.TBL_KHACH
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="~/Content/Client/css/style.css">
+    <title>Toeic.com | Trang chủ</title>
+</head>
+<body>
+    <!-- Đăng ký -->
+    <div class="register">
+        <div class="container">
+            <div class="register_title">
+                <h1>Đăng Ký</h1>
+            </div>
+
+            <div class="row">
+                <div class="register_content">
+
+                    @using (Html.BeginForm())
+                    {
+
+                        <div class="form-group">
+                            <label for="my-input">Họ và tên:</label>
+                            @Html.EditorFor(model => model.S_HOTEN, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.S_HOTEN, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="my-input">Địa chỉ:</label>
+                            @Html.EditorFor(model => model.S_DIACHI, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.S_DIACHI, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="my-input">Tài khoản:</label>
+                            @Html.EditorFor(model => model.S_NAME, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.S_NAME, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="my-input">Mật khẩu:</label>
+                            @Html.EditorFor(model => model.S_PASSWORD, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.S_PASSWORD, "", new { @class = "text-danger" })
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Đăng Ký</button>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hết Đăng ký -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- main js -->
+    <script src="~/Content/Client/js/main.js"></script>
+</body>
+</html>
