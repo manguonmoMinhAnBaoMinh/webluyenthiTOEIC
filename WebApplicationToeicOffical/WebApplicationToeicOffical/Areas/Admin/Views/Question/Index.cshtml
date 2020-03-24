@@ -36,14 +36,13 @@
                     <tr>
 
                         <td>@i</td>
-                        <td>@item.Q_TEXT</td>
+                        <td>
+                            <p>@item.Q_TEXT</p>
+                            <a href="/Admin/Question/ViewQuestion?id=@item.QUESTION_ID" class="btn btn-success btn-xs"> Xem đáp án</a>
+                        </td>
 
                         <td class="text-center">
-
-                            <a href="/Admin/Question/ViewQuestion?id=@item.QUESTION_ID" class="btn btn-danger btn-xs"> Xem đáp án</a>
-                            |
-                            <a href="/Admin/Question/EditQuestion?id=@item.QUESTION_ID" class="btn btn-danger btn-xs"> Sửa</a>
-                            |
+                            <a href="/Admin/Question/EditQuestion?id=@item.QUESTION_ID" class="btn btn-primary btn-xs"> Sửa</a>
                             <input type="submit" value="Xóa" class="btn btn-danger btn-xs" onclick="return confirm('Bạn có muốn xóa tài khoản ?')" />
 
                         </td>
@@ -57,11 +56,5 @@
         }
 
     </table>
-    @Html.PagedListPager(Model, page => Url.Action("Index", new { page}) )
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
 </div>
-
-
-
-
-
-
